@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Pedro Balbino
+	email = phsb5321@gmail.com
+[core]
+	editor = code --wait
+	pager = cat
+[push]
+	followTags = true
+[alias]
+	s = !git status -S
+	c = !git add --all && git commit -m
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+	ammend = !git add --all && git commit --ammend --no-edit
